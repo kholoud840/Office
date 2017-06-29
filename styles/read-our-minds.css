@@ -1,0 +1,130 @@
+.read-our-minds .section-title {
+    text-transform: uppercase;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.read-our-minds .section-title::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.articles {
+    padding: 10px;
+}
+
+.articles article {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+
+}
+
+.articles .article-title a {
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    color: #313131;
+    display: inline-block;
+
+}
+
+.articles .article-desc {
+    font-size: 0.6em;
+    color: #555;
+    padding-bottom: 16px;
+}
+
+.articles time {
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+.articles .byline {
+    font-weight: 300;
+    color: #313131;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.articles .see-all {
+    text-align: center;
+}
+
+.articles .see-all a {
+    color: red;
+    padding: 16px 0;
+    display: inline-block;
+    font-size: 0.7em;
+}
+
+@media (min-width: 37.75em) {
+    .read-our-minds .section-title {
+        text-align: initial;
+    }
+
+    .articles .article-desc {
+        padding-bottom: 0;
+    }
+
+    .articles time {
+        padding-bottom: 0;
+    }
+
+    .articles {
+        padding: 0;
+    }
+
+    .articles article {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .articles article:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/2.png);
+        background-size: cover;
+        color: #fff;
+    }
+
+    .articles article:hover .article-title a,
+    .articles article:hover .article-desc,
+    .articles article:hover .byline {
+        color: #fff;
+    }
+
+    .articles .about-article {
+        flex: 0 0 420px;
+    }
+
+    .articles .byline, .articles .article-title a, article time {
+        font-size: 0.8em;
+    }
+
+    .read-our-minds .section-title::after {
+        margin: 20px 0;
+    }
+
+    .articles .byline:hover {
+        opacity: 0.5;
+    }
+
+    .articles article {
+        position: relative;
+    }
+
+    .articles article .article-title a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

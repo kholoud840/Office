@@ -1,0 +1,166 @@
+.who-are-we-section {
+    text-align: center;
+    background: #f6f6f6;
+    padding: 20px;
+}
+
+.who-are-we-section .section-title {
+    text-transform: uppercase;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.who-are-we-section .section-title::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.who-are-we-section .section-desc {
+    font-size: 0.76em;
+    color: #555;
+
+}
+
+/*
+.team-members{
+    display:grid;
+    grid-template-columns: 130px 130px 130px 130px 130px;
+    grid-template-rows:130px 130px 130px ;
+    grid-gap:5px;
+    transform: rotate(-90deg) ;
+}
+.member{
+    overflow: hidden;
+}
+.team-members .used{
+    background: #ccc;
+}
+.team-members .inner-wrapper{
+    transform: translateY(4px) rotate(90deg);
+
+}
+.team-members .inner-wrapper img {
+    width: 100%;
+    height: auto;
+}
+.who-are-we-section .content{
+    display: block;
+}
+*/
+.member {
+    overflow: hidden;
+}
+
+.team-members {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+    max-width: 600px;
+}
+
+.team-members .member {
+    box-sizing: border-box;
+    padding: 1rem;
+    background: #ccc;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.team-members .inner-wrapper {
+    position: relative;
+}
+
+.team-members .inner-wrapper img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    height: 150%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    object-fit: cover;
+}
+
+@media (min-width: 37.75em) {
+    .who-are-we-section {
+        padding: 20px 0;
+    }
+
+    .who-are-we-section .content {
+        display: flex;
+    }
+
+    .who-are-we-section .section-desc {
+        width: 300px;
+    }
+
+    .who-are-we-section {
+        text-align: initial;
+    }
+
+    .who-are-we-section .section-title {
+        text-align: initial;
+    }
+
+    .who-are-we-section .section-title::after {
+        margin: 20px 0;
+    }
+
+    .who-are-we-section .side-text {
+        padding-top: 100px;
+    }
+
+    .team-members {
+        transform: translateX(-16px) rotate(-45deg);
+    }
+
+    .team-members .inner-wrapper {
+        width: 192px;
+        height: 192px;
+        transform: rotate(45deg) translateX(-44px);
+    }
+
+    .team-members {
+        grid-template-columns: 130px 130px 130px 130px 130px;
+        grid-template-rows: 130px 130px 130px;
+        margin: 5rem auto;
+        transform: rotate(-45deg);
+    }
+
+    .team-members .inner-wrapper {
+        transform: rotate(45deg);
+    }
+
+    .team-members .member:nth-child(4) {
+        grid-column: 2 / 3;
+        grid-row: 2;
+    }
+
+    .team-members .member:nth-child(5) {
+        grid-column: 3 / 4;
+        grid-row: 2;
+    }
+
+    .team-members .member:nth-child(6) {
+        grid-column: 4 / 5;
+        grid-row: 2;
+    }
+
+    .team-members .member:nth-child(7) {
+        grid-column: 4 / 5;
+        grid-row: 3;
+    }
+
+    .team-members .member:nth-child(8) {
+        grid-column: 5 / 6;
+        grid-row: 3;
+    }
+
+}

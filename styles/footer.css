@@ -1,0 +1,31 @@
+footer .contact-us{
+    text-align: center;
+    color: #ffffff;
+    padding: 4px 0;
+    background: #ef4035;
+    text-transform: capitalize;
+}
+
+.contact-details{
+    background:  #28282e;
+    padding: 26px 0;
+    color: #fff;
+    font-size: 0.5em;
+}
+.contact-details span{
+    display:block;
+    padding: 6px 0;
+}
+address{
+    text-align: center;
+}
+@media (min-width: 37.5em) {
+    footer .contact-us{
+        padding: 20px 0;
+    }
+
+    address{
+        display: flex;
+        justify-content: space-between;
+    }
+}
