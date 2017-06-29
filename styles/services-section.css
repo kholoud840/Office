@@ -23,48 +23,19 @@
 .services-section .section-desc {
     font-size: 0.76em;
     color: #555;
-/ / padding-bottom: 16 px;
+    padding-bottom:16px;
 }
 
 .side-text {
     padding-top: 100px;
 }
 
-/*.services{
-
-}
-.service{
-    overflow: hidden;
-}
-.services .used{
-    background: #fff;
-}
-.services .inner-wrapper{
-    transform: translateY(40px) rotate(90deg);
-    text-align: center;
-}
-.services img{
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
-
-}
-.services span{
-    display: block;
-    font-size: 0.6em;
-    text-transform: uppercase;
-    padding-top: 5px;
-
-}
-.services-section .content{
-    display: block;
-} */
-
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4px;
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .services .service {
@@ -81,7 +52,7 @@
     display: block;
 }
 
-@media (min-width: 37.75em) {
+@media (min-width: 50em) {
 
     .services-section {
         text-align: initial;
@@ -104,19 +75,6 @@
         width: 300px;
     }
 
-    /*.services{
-        transform:translateX(-16px)  rotate(-45deg) ;
-    }
-    .services .inner-wrapper{
-        transform: translateX(6px) rotate(45deg);
-    }
-    .services .used:hover{
-        background: #28282e;
-    }
-    .services .used:hover span{
-        color: #ffffff;
-    }
-    */
     .services {
         grid-template-columns: 130px 130px 130px 130px 130px;
         grid-template-rows: 130px 130px 130px;

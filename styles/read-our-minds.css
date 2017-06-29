@@ -19,9 +19,8 @@
 }
 
 .articles article {
-    padding: 16px;
+    padding: 24px 16px;
     border-bottom: 1px solid #eee;
-
 }
 
 .articles .article-title a {
